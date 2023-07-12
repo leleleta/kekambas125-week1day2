@@ -1,4 +1,8 @@
 /* Universal Selector */
+/* the asterisk is the universal selector */
+/*{
+    border:1px solid blue;
+} */
 
 
 .navbar{
@@ -30,30 +34,58 @@ Box Model is made up of 4 parts: Content, Padding, Border, Margin
 /*
 Total Size:
 Height: 120px (Content) + 2825px (Padding) + 2*5px (Border) + 2*20px (Margin) = 200px
-Width: 300 px (Content) + 2*25px (Padding) + 2*5 (Border) + 2*20px (Margin) = 500px
+Width: 300 px (Content) + 2*25px (Padding) + 2*5 (Border) + 2*20px (Margin) = 400px
+*/
+
+
+
+
 
 /* Simple Selector */
-/* element: grabs all of the elements base on the element name e.g h1,h2,p,div{} */
+/* element: grabs all of the elements based on the element name e.g h1,h2,p,div{} */
+h3 {
+    text-transform: uppercase;
+}
 
+section {
+    width: 90vw;
+    margin: auto;
+}
 
 /* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
-
+.selectors {
+    border: 3px solid red;
+    margin: 10px 0;
+}
 
 /* id: grabs the element with the id. begins with an octothorpe (#) e.g. #idName */
+#simple {text-align: center;
 
+}
 
 
 /* Combinator Selector - based on the relationship */
 /* Descendant Selector - Used to match all elements that are direct descendants of a specified element */
 
+#combo h6 {
+    background-color: aqua;
+}
 
 /* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangably because they are very similar. The difference here though is specificity */
-
+#combo > h6{
+    text-align: right;
+}
 
 /* Adjacent Sibling Selector (+) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
-
+aside + h4 {
+    background-color: green;
+}
 
 /* General Sibling Selector (~) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+aside ~ h3{
+    background-color: orange;
+}
+
 
 
 
