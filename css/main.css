@@ -3,6 +3,10 @@
 /*{
     border:1px solid blue;
 } */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 .navbar{
@@ -184,14 +188,26 @@ div[title*="s"]{
 
 
 /* CSS DISPLAYS */
+.block-level{
+    border: 5px solid black;
+}
 
+.block-level > h3{
+    border: 3px solid mediumslateblue;
+    display: inline; /*override the default of display: block */
+}
 
-
+#displays a {
+    border: 3px solid goldenrod;
+}
 /* 
     Display: None
     Used to hide an element. Commonly used with JavaScript 
 */
-
+#middle {
+    border: 3px solid darkorchid;
+    /* display: none; */
+}
 
 
 /* CSS POSITIONS */
