@@ -93,15 +93,30 @@ aside ~ h3{
 /* selector:pseudo-class{} */
 
 /* unvisited link */
-
+.selectors a:link{
+    color: red;
+}
 /* visited link */
-
+.selectors a:visited link{
+    color:green;
+}
 /* mouse over link */
-
+.selectors a: hover{
+    color: white;
+    background-color: balck;
+}
 /* selected link */
+.selectors a:active{
+    color:blue;
+    background-color: red;
+}
 
-
-
+.child-example p{
+    background-color: blueviolet;
+}
+.child-example p:nth-child(1){
+    background-color: aquamarine;
+}
 
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
